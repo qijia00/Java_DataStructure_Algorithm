@@ -8,7 +8,8 @@ public class PrintDuplicateCharactersFromString {
 	public static void main(String[] args) {
 		printDuplicateCharacters("abcedfghijklmnopqrstuvwxyzjiaqi");
 	}
-		
+	
+	//this solution uses String method toCharArray; HushMap method containsKey(key), put(key, value); and Set.
 	public static void printDuplicateCharacters(String string) {
 		char[] stringToCharArray = string.toCharArray();
 		
