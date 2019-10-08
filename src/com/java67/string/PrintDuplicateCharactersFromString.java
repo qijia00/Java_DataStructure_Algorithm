@@ -21,14 +21,22 @@ public class PrintDuplicateCharactersFromString {
 				map.put(c, 1);
 			}			
 		}
-		
-		Set<Character> keys = map.keySet();
+
 		System.out.println("Duplicated Characters From String: " + string);
-		for(char k : keys) {
-			if (map.get(k) > 1) {
-				System.out.println(k + ": " + map.get(k));
+//		Set<Character> keys = map.keySet();
+//		for(char k : keys) {
+//			if (map.get(k) > 1) {
+//				System.out.println(k + ": " + map.get(k));
+//			}
+//		}
+		
+		//same as line 26 to 31.
+		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+			if (entry.getValue() > 1) {
+				System.out.println(entry.getKey() + ": " + entry.getValue());
 			}
 		}
+		
 	}
 
 }
