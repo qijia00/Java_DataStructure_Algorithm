@@ -22,7 +22,7 @@ public class ReverseString3UsingRecursion {
 	}
 	
 	public static void printReversedString(String s){
-		System.out.print("The first non repeated charater from String \"" + s + "\" is: ");
+		System.out.print("Original String \"" + s + "\" is reversed to: ");
 		if (s == null) {
 			System.out.println("null strings are not allowed!");
 			System.out.println();
