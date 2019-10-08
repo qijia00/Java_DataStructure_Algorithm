@@ -40,7 +40,7 @@ public class PrintFirstNonRepeatedCharacterFromString3 {
 				System.out.println(nonRepeating.get(0));
 				System.out.println();
 			}else {
-				System.out.println("no non repeated charater was found!");
+				System.out.println("no non repeated character was found!");
 			}
 		}
 	}

@@ -37,7 +37,7 @@ public class PrintFirstNonRepeatedCharacterFromString2 {
 				}
 			}
 			if (!found) {
-				System.out.println("no non repeated charater was found!");
+				System.out.println("no non repeated character was found!");
 			}
 		}
 	}
