@@ -25,7 +25,7 @@ public class PrintFirstNonRepeatedCharacterFromString3 {
 			s = s.toLowerCase();
 			char[] sArray = s.toCharArray();
 			Set<Character> repeating = new HashSet<>();
-			List<Character> nonRepeating = new ArrayList();
+			List<Character> nonRepeating = new ArrayList<>();
 			for (char c : sArray) {
 				if (nonRepeating.contains(c)){
 					nonRepeating.remove(""+c);
