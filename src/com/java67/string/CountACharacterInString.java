@@ -9,7 +9,7 @@ public class CountACharacterInString {
 		CountAGivenCharacterInString("AbcdEfghIjklmnOpqrstUvwxyzAEIOUzzz!@#$%^&*()0987654321", 'i');
 	}
 	
-	//this solution uses String method toLowerCase, toCharArray.
+	//this solution uses String method toCharArray.
 	public static void CountAGivenCharacterInString(String s, Character a) {
 		System.out.print("The number of character \'" + a + "\' in the String \"" + s + "\" is: ");
 		if (s == null) {
