@@ -14,7 +14,7 @@ public class FindAllStringPermutationsUsingRecursionImproved {
 		printPermutations("jqkA");
 	}
 	
-	//construct result into String empty, once the original string becomes empty, returns.
+	//this solution uses ArrayList method add, addAll; and String method isEmpty, length, charAt, subString.
 	private static List<String> generatePermutations(String empty, String s) {
 		List<String> permutations = new ArrayList<>();
 		if (s.isEmpty() ){ //In the case of recursion, the most important question is the base case, because that is responsible for stopping recursive call.
