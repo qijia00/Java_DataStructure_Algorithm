@@ -19,6 +19,7 @@ public class ReverseWordsInASentence {
 			System.out.println();			
 		}else {
 			String[] splittedString = s.trim().split("\\s");
+			//String[] splittedString = s.trim().split(" "); //same as split("\\s")
 			StringBuilder reversed = new StringBuilder();
 			for (int i = splittedString.length-1; i >= 0;  i--){
 				reversed.append(splittedString[i]).append(" ");					
