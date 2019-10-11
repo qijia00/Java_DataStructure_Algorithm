@@ -17,7 +17,7 @@ public class CheckIfRotationStringsImproved {
 		printRotationStrings("programming", "ingprogramm");
 	}
 	
-	//this solution uses String method length, substring, equals; and ArrayList method add, iteration.
+	//this solution uses String method length, concatenate, contains.
 	public static boolean rotationStrings(String left, String right){
 		if (left.length() != right.length()) {
 			return false;
