@@ -27,6 +27,5 @@ public class ReverseWordsInASentence {
 			System.out.println(reversed.toString().trim());
 			System.out.println();
 		}
-
 	}
 }
