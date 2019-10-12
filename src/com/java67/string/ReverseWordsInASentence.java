@@ -14,7 +14,7 @@ public class ReverseWordsInASentence {
 		if (s == null) {
 			System.out.println("null strings are not allowed!");
 			System.out.println();
-		}else if (s.trim() == "") {
+		}else if (s.trim().isEmpty()) {
 			System.out.println(s);
 			System.out.println();			
 		}else {
