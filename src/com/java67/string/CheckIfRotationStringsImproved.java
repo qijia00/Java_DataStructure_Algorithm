@@ -1,6 +1,5 @@
 package com.java67.string;
 
-import java.util.ArrayList;
 import java.util.List;
 
 //Write a program to check if two given String s1 and s2 are rotations of another. 
