@@ -16,8 +16,11 @@ public class CheckIfTwoStringAreAnagram2 {
 		System.out.println("and string 2: " + s2);
 		System.out.print("are anagram: ");
 		
-		if (s1 == null | s2 == null | s1 =="" | s2 =="") {
-			System.out.println("null and empty strings are NOT allowed!");
+		if(s1 == null | s2 == null) {
+			System.out.println("null strings are not allowed!");
+			return false; 
+		}else if (s1.trim().isEmpty() | s2.trim().isEmpty()) { //s.trim() == "" won't work
+			System.out.println("empty strings are not allowed!");
 			return false;
 		}else {
 			s1 = s1.toLowerCase();
