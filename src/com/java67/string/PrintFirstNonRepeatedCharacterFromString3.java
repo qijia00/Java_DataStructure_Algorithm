@@ -18,8 +18,11 @@ public class PrintFirstNonRepeatedCharacterFromString3 {
 	//this solution uses String method toLowerCase, toCharArray; HashSet method add; and ArrayList method remove, add, size, get(index).
 	public static void printFirstNonRepeatedCharacter(String s) {
 		System.out.print("The first non repeated charater from String \"" + s + "\" is: ");
-		if (s == "" | s == null) {
-			System.out.println("empty or null strings are not allowed!");
+		if(s == null) {
+			System.out.println("null strings are not allowed!");
+			System.out.println(); 
+		}else if (s.trim().equals("")) { //s.trim() == "" won't work
+			System.out.println("empty strings are not allowed!");
 			System.out.println();
 		}else {
 			s = s.toLowerCase();
