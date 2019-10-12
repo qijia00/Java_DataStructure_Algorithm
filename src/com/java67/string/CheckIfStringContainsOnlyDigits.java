@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class CheckIfStringContainsOnlyDigits {
 	public static void main(String[] args){
 		isDigitsString(null);
-		isDigitsString("");
+		isDigitsString(" ");
 		isDigitsString("1234567890");
 		isDigitsString("JiaQi");
 		isDigitsString("1?");
@@ -16,8 +16,11 @@ public class CheckIfStringContainsOnlyDigits {
 	//this solution uses Pattern method matcher(string).matches().
 	public static void isDigitsString(String s){
 		System.out.print("The String \"" + s + "\": ");
-		if (s == "" | s == null) {
-			System.out.println("empty and null strings are not allowed!");
+		if(s == null) {
+			System.out.println("null strings are not allowed!");
+			System.out.println(); 
+		}else if (s.trim().isEmpty()) { //s.trim() == "" won't work
+			System.out.println("empty strings are not allowed!");
 			System.out.println();
 		}else {
 			//Pattern pattern = Pattern.compile(".*\\D.*"); //contains a non-digit
