@@ -14,7 +14,8 @@ public class PrintFirstNonRepeatedCharacterFromString3 {
 		printFirstNonRepeatedCharacter("9999999998888888877777776666665555544443332210");
 		printFirstNonRepeatedCharacter("zzz");
 	}
-	
+	//this solution is a trade-off between time and space, 
+	//it uses two storage to cut down one iteration: complexity is reduced to O(n) + O(1)
 	//this solution uses String method toLowerCase, toCharArray; HashSet method add; and ArrayList method remove, add, size, get(index).
 	public static void printFirstNonRepeatedCharacter(String s) {
 		System.out.print("The first non repeated charater from String \"" + s + "\" is: ");
@@ -31,7 +32,7 @@ public class PrintFirstNonRepeatedCharacterFromString3 {
 			List<Character> nonRepeating = new ArrayList<>();
 			for (char c : sArray) {
 				if (nonRepeating.contains(c)){
-					nonRepeating.remove(""+c);
+					nonRepeating.remove((Character) c); //cast c to object
 					repeating.add(c);
 				}else if (repeating.contains(c)){
 					continue;

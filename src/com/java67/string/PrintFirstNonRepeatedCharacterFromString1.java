@@ -12,7 +12,7 @@ public class PrintFirstNonRepeatedCharacterFromString1 {
 		printFirstNonRepeatedCharacter("9999999998888888877777776666665555544443332210");
 		printFirstNonRepeatedCharacter("zzz");
 	}
-	
+	//this solution this solution require one LinkedHashMap and two for loops.
 	//this solution uses String method toLowerCase, toCharArray, length, entrySet; LinkedHashMap method containsKey(key), get(key), put(key, value); 
 	//and Map Entry method getValue, getKey.
 	public static void printFirstNonRepeatedCharacter(String s) {
