@@ -10,6 +10,8 @@ public class FindMissingNumberInArrayImproved {
 	}
 	//BitSet creates an array of bits represented by boolean values.
 	//such as Bit0 is 1, Bit1 is 0, Bit 2 is 0, Bit3 is 1, etc.
+	// since the bit values can be accessed by non-negative integers as an index.
+	// this solution won't work if the intArray contains negative integers.
 	public static void missingNumbers(int[] numbers) {
 		BitSet bs = new BitSet(); //BitSet's size is flexible
 		for (int number : numbers) {
