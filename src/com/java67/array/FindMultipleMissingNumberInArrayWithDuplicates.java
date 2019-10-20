@@ -13,7 +13,7 @@ public class FindMultipleMissingNumberInArrayWithDuplicates {
 	// since the bit values can be accessed by non-negative integers as an index.
 	// this solution won't work if the intArray contains negative integers.
 	public static void findMissingNumbers(int[] numbers) {
-		System.out.println("The missing numbers from array " + numbers + " are: ");
+		System.out.println("The missing numbers from array " + Arrays.toString(numbers) + " are: ");
 		Arrays.sort(numbers);
 		BitSet bs = new BitSet();
 		for (int number : numbers) {
